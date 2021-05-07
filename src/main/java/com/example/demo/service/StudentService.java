@@ -7,6 +7,7 @@ import com.example.demo.util.CustomException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.xml.bind.ValidationException;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -65,7 +66,6 @@ public class StudentService {
         student1.setName(studentDTO.getName());
         student1.setSurname(studentDTO.getSurname());
         student1.setEmail(studentDTO.getEmail());
-
         studentDAO.save(student1);
     }
 

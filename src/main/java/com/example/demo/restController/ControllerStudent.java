@@ -4,6 +4,8 @@ import com.example.demo.DTO.StudentDTO;
 import com.example.demo.service.StudentService;
 import com.example.demo.util.CustomException;
 import com.example.demo.util.ErrorMessage;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +13,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.NoSuchElementException;
 
+@Data
+@RequiredArgsConstructor
 @RestController
 public class ControllerStudent {
 
